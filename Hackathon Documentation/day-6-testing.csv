@@ -1,0 +1,7 @@
+Test Case,Expected Result,Actual Result,Pass/Fail
+1. Product search functionality,Users can search furniture using keywords and filters.,Search returned relevant results for furniture.,Pass
+2. Add to cart button,Items can be added to the cart successfully.,Item added to cart without issues.,Pass
+3. Checkout process,Users can proceed to checkout with correct order details.,"Checkout works correctly, items and totals confirmed.",Pass
+4. Payment gateway integration,"Payment methods (credit card, PayPal, etc.) work.",Payments processed correctly with successful transactions.,Pass
+5. User registration and login,Users can register and log in successfully.,Registration and login both worked without errors.,Pass
+6. Order history and tracking,Users can view order history and track deliveries.,Order history and tracking are accessible and accurate.,fail
