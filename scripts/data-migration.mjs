@@ -70,9 +70,7 @@ async function importData() {
               },
             }
           : undefined,
-        imagePath: product.imagePath,
-        
-         // Store original image URL
+        imagePath: product.imagePath, // Store original image URL
       };
 
       await client.create(sanityProduct);

@@ -4,6 +4,7 @@ import { urlFor } from '@/sanity/lib/image';
 import { FaCartPlus, FaHeart } from 'react-icons/fa';
 import { useState } from 'react';
 import { useCart } from '../../../../context/CartContext';
+import { products } from '@/sanity/schemaTypes/product';
 
 const ProductDetail = ({ product }: { product: Product }) => {
   const { addToCart } = useCart();
@@ -17,7 +18,7 @@ const ProductDetail = ({ product }: { product: Product }) => {
       id: product.id,
       name: product.name,
       price: product.price,
-      image: urlFor(product.image).url(),
+      image: urlFor(products.image).url(),
       quantity,
     });
   };
@@ -27,7 +28,7 @@ const ProductDetail = ({ product }: { product: Product }) => {
       <div className="flex justify-center items-center">
         <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Image
-            src={urlFor(product.image).url()}
+            src={urlFor(products.image).url()}
             alt={product.name}
             height={1000}
             width={1000}
